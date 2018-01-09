@@ -1,8 +1,8 @@
-Object Classification
+# Object Classification
 
 
 
-Preprocess
+# Preprocess
 
 For creating the training and testing dataset I had to extract useful information from the xml
 file. For this I used Element-Tree, which is a very famous xml parser. Since I had to do object
@@ -18,7 +18,7 @@ with the labels and was sent to train the model.
 
 
 
-CNN Model
+# CNN Model
 
 I have used Keras for building the CNN Model. I used a sequential model which has the embedding
 input layer that takes in matrices of 500x500x3. This layer is followed by 4 Convolution layer,
@@ -27,7 +27,7 @@ the 20 classes, the output layer has 20 units.
 
 
 
-Results
+# Results
 
 I was able to obtain an accuracy of 93% for classification. I have used 2700 random images for
 training and 300 for testing.
